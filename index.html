@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="img/google.png" />
+        <title>google</title>
+        <link rel="icon" type="image/x-icon" href="img/" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/app-dark.css" />
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="Accest/css/bootstrap-dark.min.css" />
+        <style>
+            @font-face {
+                font-family: shabnam;
+                src: url(font/Shabnam.woff2) format(woff2);
+            }
+            body {
+                font-family: shabnam;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f2f2f2;
+                margin: 0;
+            }
+            .search-container {
+                display: flex;
+                align-items: center;
+                width: 700px;
+                background-color: white;
+                border: 1px solid #dfe1e5;
+                border-radius: 29px;
+                box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            }
+            .search-container input {
+                flex: 1;
+                height: 44px;
+                padding: 0 20px 0 15px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+            .search-container button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0 16px;
+            }
+            .search-container button img {
+                width: 30px;
+                height: 30px;
+            }
+            .pages {
+                height: 27px;
+                width: 27px;
+                border-style: solid;
+                border-color: silver;
+                border-radius: 25%;
+                padding: 0px 3px 3px 3px;
+            }
+            .mh5 {
+                color: white;
+                padding-top: 7px;
+                font-weight: 400;
+            }
+            .divh5 {
+                padding: 0;
+            }
+            .gtaimg {
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+            }
+            .p2d {
+                color: white;
+                font-size: small;
+                margin-top: 5px;
+            }
+            .divp {
+                padding: 3 px;
+            }
+            .divp1 {
+                color: white;
+            }
+            .divpr {
+                padding-right: 10 px;
+            }
+            .imgshare {
+                height: 25px;
+                width: 25px;
+            }
+            .divmr {
+                margin-right: 30%;
+            }
+            .img3dot {
+                width: 30px;
+                height: 30px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li {
+                float: left;
+                margin: 10px 0px 0px 6px;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+            .liadiv {
+                margin: none 7px;
+            }
+            .liadivb {
+                color: silver;
+                font-size: small;
+            }
+            .imgprof {
+                width: 27px;
+                height: 27px;
+                border-radius: 100%;
+            }
+            .googlestyle {
+                margin: 50px 0px 70px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                text-align: center;
+                font-size: 90px;
+                font-weight: 80;
+            }
+            .searchicon {
+                width: 15px;
+                height: 15px;
+                margin: 0 0 3px 15px;
+            }
+            .dropdown1 {
+                background-color: transparent;
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .mooz ul {
+                background-color: black;
+            }
+            .mooz li {
+                color: aliceblue;
+            }
+            .dropdown2 {
+                position: absolute;
+                color: white;
+                background-color: gray;
+                flex-direction: column;
+                border-radius: 8px;
+                width: 100px;
+                text-align: left;
+            }
+            .box-under-search-box {
+                background-color: rgb(41, 41, 41);
+                height: 150px;
+                width: auto;
+                border-radius: 30px;
+            }
+            .main-box {
+                margin-top: 30px;
+                height: 60px;
+                width: 60px;
+                border-radius: 50px;
+                background-color: rgb(53, 53, 53);
+            }
+            .u-text {
+                color: white;
+                font-size: small;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(26, 26, 26)">
+        <nav>
+            <ul>
+                <li style="margin: 23px 0 0 15px">
+                    <div class="Btn-Wapper">
+                        <button class="dropdown1" onclick="dropdown()">
+                            <img src="img/3dot.png" alt="logo" class="img3dot" />
+                        </button>
+                        <ul class="dropdown2" id="action" style="display: none">
+                            <li>علی</li>
+                            <li>احمد</li>
+                            <li>رضا</li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        var action = document.getElementById("action");
+                        function dropdown() {
+                            if (action.style.display == "none") {
+                                action.style.display = "flex";
+                            } else if (action.style.display == "flex") {
+                                action.style.display = "none";
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <a href="#">
+                        <div role="button" class="liadiv">
+                            <div class="pages">
+                                <b class="liadivb">۴</b>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div role="button">
+                            <img src="img/space.jpg" alt="you'r prof" class="imgprof" />
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col googlestyle">Google</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <div class="search-container">
+                            <img src="img/search-icon.png" alt="icon" class="searchicon" />
+                            <input autofocus style="border-radius: 24px" type="text" placeholder="Search Google or type a URL" />
+                            <button>
+                                <img src="img/aaa.png" alt="Mic Icon" />
+                            </button>
+                            <button>
+                                <img src="img/camera.png" alt="Search Icon" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="row box-under-search-box" dir="rtl">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="main-box"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="u-text">you'r text</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" style="text-align: right; margin-top: 2%">
+                        <div class="row">
+                            <div class="col d-flex" style="padding-left: 0">
+                                <div role="button">
+                                    <img class="img3dot" src="img/3dot.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <p style="color: white">کشف کردن</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" style="text-align: right">
+                        <a
+                            style="text-decoration: none"
+                            href="https://flopsy.ir/wiki/attack-on-titan/category/%D8%B4%D8%AE%D8%B5%DB%8C%D8%AA%E2%80%8C%D9%87%D8%A7/"
+                        >
+                            <div class="row" role="button">
+                                <div class="col-4" style="padding: 0">
+                                    <div class="row" dir="ltr">
+                                        <div class="col-auto">
+                                            <img style="width: 150px; border-radius: 10px" src="img/images.jfif" alt="image" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h4 style="color: white; font-weight: 300">معرفی شخصیت های انیمه اتک ان تیتان:میکاسا آکرمن</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" style="text-align: right; margin-top: 2%">
+                        <div class="row">
+                            <div dir="ltr" class="col divh5">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="Btn-Wapper" style="display: flex">
+                                            <button class="dropdown1" onclick="dropdown()">
+                                                <img src="img/3dot.png" alt="logo" class="img3dot" />
+                                            </button>
+                                            <ul class="dropdown2" id="action1" style="display: none">
+                                                <li>علی</li>
+                                                <li>احمد</li>
+                                                <li>رضا</li>
+                                            </ul>
+                                        </div>
+                                        <script type="text/javascript">
+                                            var action = document.getElementById("action1");
+                                            function dropdown() {
+                                                if (action.style.display == "none") {
+                                                    action.style.display = "flex";
+                                                } else if (action.style.display == "flex") {
+                                                    action.style.display = "none";
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+                                    <div class="col" style="display: flex">
+                                        <img src="img/share.png" alt="icon" class="imgshare" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" style="display: block">
+                                <div class="row" dir="rtl">
+                                    <div class="col-auto divh5">
+                                        <img src="img/download.png" alt="logo" />
+                                    </div>
+                                    <div class="col-auto divpr">
+                                        <p class="divp1">فلاپسی</p>
+                                    </div>
+                                    <div class="col-auto divp">
+                                        <p class="p2d">2d</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col" style="padding: 0">
+                        <hr style="color: white; border: 1.5px solid white; border-radius: 100px" />
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <a style="text-decoration: none" href="https://www.digikala.com/mag/gta-6-rockstar-officially-unveils-first-trailer/">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col divh5">
+                                <img src="img/download.jfif" alt="GTA6 picture" class="gtaimg" />
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col divh5" dir="rtl">
+                                <h5 class="mh5">جی‌تی‌ای ۶ رسماً معرفی شد؛ عرضه در سال ۲۰۲۵</h5>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <script src="js/bootstrap.min.js.map"></script>
+    </body>
+</html>
